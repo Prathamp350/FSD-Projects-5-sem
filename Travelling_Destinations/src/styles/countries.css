@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../assets/LO.jpg) no-repeat center center fixed; /* Adjust background image */
+    background-size: cover;
+}
+
+.wrapper {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.8); /* Light background for better contrast */
+    backdrop-filter: blur(10px);
+    color: black;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.wrapper h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333; /* Darker text for the title */
+}
+
+select {
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    font-size: 16px;
+    color: #333; /* Dark text for better readability */
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Cpath fill="none" stroke="%23333" d="M7 10l5 5 5-5" stroke-width="2"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px; /* Size of custom arrow */
+}
+
+select:focus {
+    border-color: #ff7f50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(255, 127, 80, 0.5); /* Glow effect */
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    background: #ff7f50; /* Coral color for button */
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white; /* White text on button */
+    font-weight: 600;
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background: #ff6347; /* Change color on hover */
+}
+
+button:active {
+    transform: scale(0.98); /* Slightly shrink on click */
+}
